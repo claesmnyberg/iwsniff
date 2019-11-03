@@ -1,6 +1,6 @@
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 CC          = gcc
-CFLAGS      = -Wall -s #-DHAVE_PCAP_DUMP_FLUSH
+CFLAGS      = -Wall -s -m32 -D_FILE_OFFSET_BITS=64  #-DHAVE_PCAP_DUMP_FLUSH
 LIBS        = -lpcap -lcrypto
 OBJS        = iwsniff.o utils.o strlcat.o capture.o net.o scanpkt.o base64.o \
               hex.o scan.o asn1.o rpc.o mount.o strlcpy.o decode.o buf.o daemon.o

@@ -158,14 +158,15 @@ int
 is_reg_file(const char *path)
 {
 	struct stat sb;
+	int ret;
 
 	if (path == NULL)
 		return(0);
 
 	memset(&sb, 0x00, sizeof(sb));
-	if (stat(path, &sb) < 0)
+	if ( (ret = stat(path, &sb)) < 0) 
 		return(0);
-		
+	
 	return(S_ISREG(sb.st_mode));
 }
 

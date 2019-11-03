@@ -22,4 +22,4 @@ TODO
 decode_portmap.c and counterparts is not yet intergrated
 
 
-Claes M Nyberg <pocpon@fuzzpoint.com>
+Claes M Nyberg <cmn@fuzzpoint.com>

@@ -57,7 +57,7 @@ usage(char *pname)
 {
     printf("\n");
     printf("\nWireless sniffer\n");
-    printf("\nBy PocPon <pocpon@fuzzpoint.com>\n");
+    printf("\nBy CMN <cmn@fuzzpoint.com>\n");
 	printf("\nUsage: %s [option(s)] [expression]\n\n", pname);
 	printf("Options:\n");
 	printf("  -b            Do not include BSSID when logging wireless traffic\n");
